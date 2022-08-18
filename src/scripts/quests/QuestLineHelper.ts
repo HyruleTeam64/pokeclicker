@@ -468,6 +468,10 @@ class QuestLineHelper {
 
         App.game.quests.questLines().push(galacticSinnohQuestLine);
     }
+    
+    public static createRamanasParkQuestLine() {
+        const ramanasParkQuestLine = new QuestLine('The Legendary Park', 'A discovery by Professor Rowan', new GymBadgeRequirement(BadgeEnums.Elite_SinnohChampion), GameConstants.BulletinBoards.Sinnoh);
+
 
     // Unova QuestLines
     public static createPlasmaUnovaQuestLine() {
