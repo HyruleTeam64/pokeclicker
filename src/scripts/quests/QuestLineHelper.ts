@@ -1447,6 +1447,7 @@ class QuestLineHelper {
         this.createPersonsofInterestQuestLine();
         this.createRocketJohtoQuestLine();
         this.createCelebiJohtoQuestLine();
+        this.createJohtoPostgameQuestLine();
         this.createAquaMagmaHoennQuestLine();
         this.createDeoxysQuestLine();
         this.createRubySapphireSeviiQuestLine();
