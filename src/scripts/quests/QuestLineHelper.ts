@@ -332,7 +332,26 @@ class QuestLineHelper {
 
         App.game.quests.questLines().push(celebiJohtoQuestLine);
     }
+     public static createJohtoPostgameQuestLine() {
+        const johtoPostgameQuestLine = new QuestLine('Kanto\'s New Age', 'Fight again against Kanto\'s Gym Leaders and see how strong they have become.', new GymBadgeRequirement(BadgeEnums.Elite_JohtoChampion), GameConstants.BulletinBoards.Johto);
 
+        const clearKantoGymLeaders = new CustomQuest(8, 0, 'Defeat the Eight Kanto Gym Leaders and their revamped teams', () =>
+            App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Future Brock')]() +
+            App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Future Misty')]() +
+            App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Future Lt. Surge')]() +
+            App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Future Erika')]() +
+            App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Janine')]() +
+            App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Future Sabrina')]() +
+            App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Future Blaine')]() +                                         
+            App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Future Blue')]()
+        );
+        johtoPostgameQuestLine.addQuest(clearKantoGymLeaders);
+         
+         const clearLegendRed = new CustomQuest (1, 0, 'Climb Mt. Silver and defeat the Legendary Trainer Red', () => App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Legend Red')]());
+        johtoPostgameQuestLine.addQuest(clearLegendRed);
+         
+         App.game.quests.questLines().push(celebiJohtoQuestLine);
+    }
     // Hoenn QuestLines
     public static createAquaMagmaHoennQuestLine() {
         const aquaMagmaHoennQuestLine = new QuestLine('Land vs. Water', 'Put a stop to the schemes of Team Aqua and Team Magma!');
