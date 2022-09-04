@@ -1288,6 +1288,15 @@ export const TemporaryBattles = [
     'Scientist Gideon',
     'Spiky-eared Pichu',
     'Rocket Boss Giovanni',
+    'Future Brock',
+    'Future Misty',
+    'Future Lt. Surge',
+    'Future Erika',
+    'Janine',
+    'Future Sabrina',
+    'Future Blaine'
+    'Future Blue'
+    'Legend Red'
     'Galactic Boss Cyrus',
     'Team Plasma Grunt 1',
     'Team Plasma Grunt 2',
