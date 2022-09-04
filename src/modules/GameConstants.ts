@@ -1294,9 +1294,9 @@ export const TemporaryBattles = [
     'Future Erika',
     'Janine',
     'Future Sabrina',
-    'Future Blaine'
-    'Future Blue'
-    'Legend Red'
+    'Future Blaine',
+    'Future Blue',
+    'Legend Red',
     'Galactic Boss Cyrus',
     'Team Plasma Grunt 1',
     'Team Plasma Grunt 2',
