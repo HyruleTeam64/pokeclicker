@@ -98,6 +98,101 @@ TemporaryBattleList['Rocket Boss Giovanni'] = new TemporaryBattle(
     'What in the world are you? How this is possible...? How can a kid like you manage to destroy my dream once again? The precious dream of Team Rocket has become little more than an illusion...',
     [new QuestLineStepCompletedRequirement('Unfinished Business', 9)]
 );
+TemporaryBattleList['Future Brock'] = new TemporaryBattle(
+    'Future Brock',
+    [
+        new GymPokemon('Graveler', 691820, 51),
+        new GymPokemon('Omastar', 691820, 53),
+        new GymPokemon('Kabutops', 691820, 52),
+        new GymPokemon('Rhyhorn', 691820, 51),
+        new GymPokemon('Onix', 702820, 54),
+    ],
+    'Your Pokémon\'s powerful attacks overcame my rock-hard resistance... You\'re stronger than I expected...',
+    );
+TemporaryBattleList['Future Misty'] = new TemporaryBattle(
+    'Future Misty',
+    [
+        new GymPokemon('Golduck', 861275, 49),
+        new GymPokemon('Quagsire', 861275, 49),
+        new GymPokemon('Lapras', 861275, 52),
+        new GymPokemon('Starmie', 875275, 54),
+    ],
+    'You really are good... I\'ll admit that you are skilled...',
+    );
+TemporaryBattleList['Future Lt. Surge'] = new TemporaryBattle(
+    'Future Lt. Surge',
+    [
+        new GymPokemon('Raichu', 691820, 51),
+        new GymPokemon('Electrode', 691820, 47),
+        new GymPokemon('Electrode', 691820, 47),
+        new GymPokemon('Magneton', 691820, 47),
+        new GymPokemon('Electabuzz', 702820, 53),
+    ],
+    'Aaargh! You are strong!',
+    );
+TemporaryBattleList['Future Erika'] = new TemporaryBattle(
+    'Future Erika',
+    [
+        new GymPokemon('Jumpluff', 861275, 51),
+        new GymPokemon('Tangela', 861275, 52),
+        new GymPokemon('Victreebel', 861275, 56),
+        new GymPokemon('Bellossom', 875275, 56),
+    ],
+    'Oh! I concede defeat... You are remarkably strong...',
+    );
+TemporaryBattleList['Janine'] = new TemporaryBattle(
+    'Janine',
+    [
+        new GymPokemon('Crobat', 691820, 47),
+        new GymPokemon('Weezing', 691820, 44),
+        new GymPokemon('Ariados', 691820, 47),
+        new GymPokemon('Ariados', 691820, 47),
+        new GymPokemon('Venomoth', 702820, 50),
+    ],
+    'I see... You have defeated Koga, my father and a member of the Elite Four, to come here. No wonder you are strong! You\'ve definitely won...',
+    );
+TemporaryBattleList['Future Sabrina'] = new TemporaryBattle(
+    'Future Sabrina',
+    [
+        new GymPokemon('Espeon', 1156700, 53),
+        new GymPokemon('Mr. Mime', 1156700, 53),
+        new GymPokemon('Alakazam', 1162700, 55),
+    ],
+    'Your power... It far exceeds what I foresaw... Maybe it isn\'t possible to fully predict what the future holds... OK, you win.',
+    );
+TemporaryBattleList['Future Blaine'] = new TemporaryBattle(
+    'Future Blaine',
+    [
+        new GymPokemon('Magcargo', 1156700, 54),
+        new GymPokemon('Magmar', 1156700, 54),
+        new GymPokemon('Rapidash', 1162700, 59),
+    ],
+    'Awesome. I have burned out...',
+    );
+TemporaryBattleList['Future Blue'] = new TemporaryBattle(
+    'Future Blue',
+    [
+        new GymPokemon('Exeggutor', 580350, 55),
+        new GymPokemon('Arcanine', 580350, 58),
+        new GymPokemon('Rhydon', 580350, 58),
+        new GymPokemon('Gyarados', 580350, 52),
+        new GymPokemon('Machamp', 580350, 56),
+        new GymPokemon('Pidgeot', 582550, 60),
+    ],
+    'No way! How the heck did I lose to you?',
+    );
+TemporaryBattleList['Legend Red'] = new TemporaryBattle(
+    'Legend Red',
+    [
+        new GymPokemon('Pikachu', 586150, 88),
+        new GymPokemon('Lapras', 582550, 80),
+        new GymPokemon('Snorlax', 582550, 82),
+        new GymPokemon('Blastoise', 582550, 84),
+        new GymPokemon('Venusaur', 582550, 84),
+        new GymPokemon('Charizard', 582550, 84),
+    ],
+    '……………… ………………',
+    );
 // Hoenn Temporary Battles
 TemporaryBattleList['Sevii Rocket Grunt 1'] = new TemporaryBattle(
     'Sevii Rocket Grunt 1',
