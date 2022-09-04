@@ -108,7 +108,8 @@ TemporaryBattleList['Future Brock'] = new TemporaryBattle(
         new GymPokemon('Onix', 702820, 54),
     ],
     'Your Pokémon\'s powerful attacks overcame my rock-hard resistance... You\'re stronger than I expected...',
-    );
+    [new QuestLineStartedRequirement('Kanto\'s New Age')]
+);
 TemporaryBattleList['Future Misty'] = new TemporaryBattle(
     'Future Misty',
     [
@@ -118,7 +119,8 @@ TemporaryBattleList['Future Misty'] = new TemporaryBattle(
         new GymPokemon('Starmie', 875275, 54),
     ],
     'You really are good... I\'ll admit that you are skilled...',
-    );
+    [new QuestLineStartedRequirement('Kanto\'s New Age')]
+);
 TemporaryBattleList['Future Lt. Surge'] = new TemporaryBattle(
     'Future Lt. Surge',
     [
@@ -129,7 +131,8 @@ TemporaryBattleList['Future Lt. Surge'] = new TemporaryBattle(
         new GymPokemon('Electabuzz', 702820, 53),
     ],
     'Aaargh! You are strong!',
-    );
+    [new QuestLineStartedRequirement('Kanto\'s New Age')]
+);
 TemporaryBattleList['Future Erika'] = new TemporaryBattle(
     'Future Erika',
     [
@@ -139,7 +142,8 @@ TemporaryBattleList['Future Erika'] = new TemporaryBattle(
         new GymPokemon('Bellossom', 875275, 56),
     ],
     'Oh! I concede defeat... You are remarkably strong...',
-    );
+    [new QuestLineStartedRequirement('Kanto\'s New Age')]
+);
 TemporaryBattleList['Janine'] = new TemporaryBattle(
     'Janine',
     [
@@ -150,7 +154,8 @@ TemporaryBattleList['Janine'] = new TemporaryBattle(
         new GymPokemon('Venomoth', 702820, 50),
     ],
     'I see... You have defeated Koga, my father and a member of the Elite Four, to come here. No wonder you are strong! You\'ve definitely won...',
-    );
+    [new QuestLineStartedRequirement('Kanto\'s New Age')]
+);
 TemporaryBattleList['Future Sabrina'] = new TemporaryBattle(
     'Future Sabrina',
     [
@@ -159,7 +164,8 @@ TemporaryBattleList['Future Sabrina'] = new TemporaryBattle(
         new GymPokemon('Alakazam', 1162700, 55),
     ],
     'Your power... It far exceeds what I foresaw... Maybe it isn\'t possible to fully predict what the future holds... OK, you win.',
-    );
+    [new QuestLineStartedRequirement('Kanto\'s New Age')]
+);
 TemporaryBattleList['Future Blaine'] = new TemporaryBattle(
     'Future Blaine',
     [
@@ -168,7 +174,8 @@ TemporaryBattleList['Future Blaine'] = new TemporaryBattle(
         new GymPokemon('Rapidash', 1162700, 59),
     ],
     'Awesome. I have burned out...',
-    );
+    [new QuestLineStartedRequirement('Kanto\'s New Age')]
+);
 TemporaryBattleList['Future Blue'] = new TemporaryBattle(
     'Future Blue',
     [
@@ -180,7 +187,8 @@ TemporaryBattleList['Future Blue'] = new TemporaryBattle(
         new GymPokemon('Pidgeot', 582550, 60),
     ],
     'No way! How the heck did I lose to you?',
-    );
+    [new QuestLineStartedRequirement('Kanto\'s New Age')]
+);
 TemporaryBattleList['Legend Red'] = new TemporaryBattle(
     'Legend Red',
     [
@@ -192,7 +200,8 @@ TemporaryBattleList['Legend Red'] = new TemporaryBattle(
         new GymPokemon('Charizard', 582550, 84),
     ],
     '……………… ………………',
-    );
+     [new QuestLineStepCompletedRequirement('Kanto\'s New Age', 0), new ClearDungeonRequirement(1, GameConstants.getDungeonIndex('Mt. Silver'))]
+);
 // Hoenn Temporary Battles
 TemporaryBattleList['Sevii Rocket Grunt 1'] = new TemporaryBattle(
     'Sevii Rocket Grunt 1',
