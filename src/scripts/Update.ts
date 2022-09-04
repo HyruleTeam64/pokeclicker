@@ -1143,7 +1143,6 @@ class Update implements Saveable {
             const queueList = saveData.breeding.queueList;
             Update.changePokemonNameToId(saveData, eggList);
             Update.changePokemonNameToId(saveData, queueList);
-        }
             
             // Add Johto Postgame Temporary Battles
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 15);
@@ -1154,8 +1153,9 @@ class Update implements Saveable {
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 20);
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 21);
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 22);
-            saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 23);   
-    },
+            saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 23);  
+            }
+    };
 
     constructor() {
         const saveData = this.getSaveData();
