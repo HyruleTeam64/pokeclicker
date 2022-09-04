@@ -350,7 +350,7 @@ class QuestLineHelper {
          const clearLegendRed = new CustomQuest (1, 0, 'Climb Mt. Silver and defeat the Legendary Trainer Red', () => App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Legend Red')]());
         johtoPostgameQuestLine.addQuest(clearLegendRed);
          
-         App.game.quests.questLines().push(celebiJohtoQuestLine);
+         App.game.quests.questLines().push(johtoPostgameQuestLine);
     }
     // Hoenn QuestLines
     public static createAquaMagmaHoennQuestLine() {
