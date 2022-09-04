@@ -1522,8 +1522,8 @@ TownList['Victory Road Johto'] = new DungeonTown(
 TownList['Mt. Silver'] = new DungeonTown(
     'Mt. Silver',
     GameConstants.Region.johto,
-    [new QuestLineStepCompletedRequirement('Kanto\'s New Age', 0)]
-    [[TemporaryBattleList['Legend Red']]
+    [new QuestLineStepCompletedRequirement('Kanto\'s New Age', 0)],
+    [TemporaryBattleList['Legend Red']],
 );
 
 //Hoenn Shops
