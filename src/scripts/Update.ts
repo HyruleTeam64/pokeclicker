@@ -1143,7 +1143,7 @@ class Update implements Saveable {
             const queueList = saveData.breeding.queueList;
             Update.changePokemonNameToId(saveData, eggList);
             Update.changePokemonNameToId(saveData, queueList);
-            
+        }
             
             // Add Johto Postgame Temporary Battles
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 15);
