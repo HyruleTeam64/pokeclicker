@@ -1523,7 +1523,7 @@ TownList['Mt. Silver'] = new DungeonTown(
     'Mt. Silver',
     GameConstants.Region.johto,
     [new RouteKillRequirement(10, GameConstants.Region.johto, 28)]
-    [TemporaryBattleList['Legend Red']],
+    [[TemporaryBattleList['Legend Red']],
 );
 
 //Hoenn Shops
