@@ -597,7 +597,7 @@ TownList['Pallet Town'] = new Town(
 TownList['Viridian City'] = new Town(
     'Viridian City',
     GameConstants.Region.kanto,
-    [ViridianCityShop],
+    [ViridianCityShop, TemporaryBattleList['Future Blue']],
     {
         requirements: [new RouteKillRequirement(10, GameConstants.Region.kanto, 1)],
         npcs: [ViridianCityOldMan1, ViridianCityOldMan2, ViridianCityOldMan3],
@@ -606,7 +606,7 @@ TownList['Viridian City'] = new Town(
 TownList['Pewter City'] = new Town(
     'Pewter City',
     GameConstants.Region.kanto,
-    [PewterCityShop],
+    [PewterCityShop, TemporaryBattleList['Future Brock']],
     {
         requirements: [
             new RouteKillRequirement(10, GameConstants.Region.kanto, 2),
@@ -629,7 +629,7 @@ TownList['Route 3 Pokémon Center'] = new Town(
 TownList['Cerulean City'] = new Town(
     'Cerulean City',
     GameConstants.Region.kanto,
-    [CeruleanCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Cerulean City']), new MoveToDungeon(dungeonList['Cerulean Cave'])],
+    [CeruleanCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Cerulean City']), new MoveToDungeon(dungeonList['Cerulean Cave']), TemporaryBattleList['Future Misty']],
     {
         requirements: [new RouteKillRequirement(10, GameConstants.Region.kanto, 4)],
         npcs: [CeruleanKantoBerryMaster, CeruleanSuperNerd, Mewtwo1, Mewtwo2, DetectiveRaichu],
@@ -638,7 +638,7 @@ TownList['Cerulean City'] = new Town(
 TownList['Vermilion City'] = new Town(
     'Vermilion City',
     GameConstants.Region.kanto,
-    [VermilionCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Vermilion City'])],
+    [VermilionCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Vermilion City']), TemporaryBattleList['Future Lt. Surge']],
     {
         requirements: [new RouteKillRequirement(10, GameConstants.Region.kanto, 6)],
         npcs: [VermilionFanClubChairman, VermilionShardApprentice],
@@ -656,7 +656,7 @@ TownList['Lavender Town'] = new Town(
 TownList['Celadon City'] = new Town(
     'Celadon City',
     GameConstants.Region.kanto,
-    [CeladonDepartmentStoreShop, CeladonCityShop, new MoveToDungeon(dungeonList['Rocket Game Corner'])],
+    [CeladonDepartmentStoreShop, CeladonCityShop, new MoveToDungeon(dungeonList['Rocket Game Corner']), TemporaryBattleList['Future Erika']],
     {
         requirements: [new RouteKillRequirement(10, GameConstants.Region.kanto, 7)],
         npcs: [BigSpender, EggHuntErika],
@@ -665,7 +665,7 @@ TownList['Celadon City'] = new Town(
 TownList['Saffron City'] = new Town(
     'Saffron City',
     GameConstants.Region.kanto,
-    [SaffronCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Saffron City']), new MoveToDungeon(dungeonList['Silph Co.']), TemporaryBattleList['Fighting Dojo'], TemporaryBattleList['Mime Interview']],
+    [SaffronCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Saffron City']), new MoveToDungeon(dungeonList['Silph Co.']), TemporaryBattleList['Fighting Dojo'], TemporaryBattleList['Mime Interview'], TemporaryBattleList['Future Sabrina']],
     {
         requirements: [new OneFromManyRequirement([
             new GymBadgeRequirement(BadgeEnums.Rainbow),
@@ -677,7 +677,7 @@ TownList['Saffron City'] = new Town(
 TownList['Fuchsia City'] = new Town(
     'Fuchsia City',
     GameConstants.Region.kanto,
-    [FuchsiaCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Fuchsia City'])],
+    [FuchsiaCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Fuchsia City']), TemporaryBattleList['Janine']],
     {
         requirements: [new OneFromManyRequirement([
             new RouteKillRequirement(10, GameConstants.Region.kanto, 18),
@@ -689,7 +689,7 @@ TownList['Fuchsia City'] = new Town(
 TownList['Cinnabar Island'] = new Town(
     'Cinnabar Island',
     GameConstants.Region.kanto,
-    [CinnabarIslandShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Cinnabar Island']), new MoveToDungeon(dungeonList['Pokémon Mansion'])],
+    [CinnabarIslandShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Cinnabar Island']), new MoveToDungeon(dungeonList['Pokémon Mansion']), TemporaryBattleList['Future Blaine']],
     {
         requirements: [new OneFromManyRequirement([
             new RouteKillRequirement(10, GameConstants.Region.kanto, 20),
@@ -1523,6 +1523,7 @@ TownList['Mt. Silver'] = new DungeonTown(
     'Mt. Silver',
     GameConstants.Region.johto,
     [new RouteKillRequirement(10, GameConstants.Region.johto, 28)]
+    [TemporaryBattleList['Legend Red']],
 );
 
 //Hoenn Shops
