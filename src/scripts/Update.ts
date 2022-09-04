@@ -1137,14 +1137,8 @@ class Update implements Saveable {
             renamePokemon(saveData, 'Aegislash', 'Aegislash (Shield)');
             renamePokemon(saveData, 'Pumpkaboo', 'Pumpkaboo (Average)');
             renamePokemon(saveData, 'Gourgeist', 'Gourgeist (Average)');
-
-            // Replace Pokémon names to IDs
-            const eggList = saveData.breeding.eggList;
-            const queueList = saveData.breeding.queueList;
-            Update.changePokemonNameToId(saveData, eggList);
-            Update.changePokemonNameToId(saveData, queueList);
             
-            // Add Johto Postgame Temporary Battles
+             // Add Johto Postgame Temporary Battles
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 15);
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 16);
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 17);
@@ -1154,6 +1148,12 @@ class Update implements Saveable {
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 21);
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 22);
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 23);  
+
+            // Replace Pokémon names to IDs
+            const eggList = saveData.breeding.eggList;
+            const queueList = saveData.breeding.queueList;
+            Update.changePokemonNameToId(saveData, eggList);
+            Update.changePokemonNameToId(saveData, queu
             }
     };
 
