@@ -2509,7 +2509,7 @@ const FightAreaZero1 = new NPC('Zero', [
     'An old book about Sinnoh\'s history was recently discovered at the Canalave City Library, it may have usefull information.',
 ], {
     image: 'assets/images/npcs/Professor Oak.png',
-    requirement: new MultiRequirement([new QuestLineStartedRequirement('Zero\'s Ambition'), new QuestLineStepCompletedRequirement('Zero\'s Ambition'), 1, GameConstants.AchievementOption.less)]),
+    requirement: new MultiRequirement([new QuestLineStartedRequirement('Zero\'s Ambition'), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 1, GameConstants.AchievementOption.less)]),
 });
 
 const FightAreaZero2 = new NPC('Zero', [
@@ -2518,7 +2518,7 @@ const FightAreaZero2 = new NPC('Zero', [
     'An old book about Sinnoh\'s history was recently discovered at the Canalave City Library, it may have usefull information.',
 ], {
     image: 'assets/images/npcs/Professor Oak.png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 1), new QuestLineStepCompletedRequirement('Zero\'s Ambition'), 2, GameConstants.AchievementOption.less)]),
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 1), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 2, GameConstants.AchievementOption.less)]),
 });
 
 const SurvivalAreaSinnohRoamerNPC = new RoamerNPC('Hiker Kevin', [
