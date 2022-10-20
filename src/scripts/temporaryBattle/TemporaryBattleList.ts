@@ -430,6 +430,20 @@ TemporaryBattleList['Galactic Boss Cyrus'] = new TemporaryBattle(
     undefined,
     {imageName: '../trainers/Galactic Boss (cyrus)'}
 );
+TemporaryBattleList['Giratina'] = new TemporaryBattle(
+    'Giratina',
+    [new GymPokemon('Giratina (Altered)', 12510000, 47)],
+    undefined,
+    [new QuestLineCompletedRequirement('A New World')],
+    [new TemporaryBattleRequirement('Giratina'), new ObtainedPokemonRequirement(pokemonMap.Giratina)],
+    {
+        displayName: 'Giratina',
+        returnTown: 'Mt. Coronet',
+        isTrainerBattle: false,
+        hideTrainer: true,
+        visibleRequirement: new QuestLineCompletedRequirement('A New World'),
+    }
+);
 
 // Unova Temporary Battles
 TemporaryBattleList['Team Plasma Grunt 1'] = new TemporaryBattle(
