@@ -2471,7 +2471,7 @@ const CanalaveYoungBoy = new NPC('Young Boy', [
     'Maybe if you can prove yourself by conquering that island, you could find Cresselia roaming around the region...',
 ]);
 
-const CanaliveSinnohMyth = new NPC('Sinnoh\'s Myth', [
+const CanalaveSinnohMyth = new NPC('Sinnoh\'s Myth', [
     '<i>Three Pokémon there were.</i>',
     '<i>Into the lakes they dove.</i>',
     '<i>Deep, deep, drawing no breath.</i>',
@@ -2663,7 +2663,7 @@ TownList['Canalave City'] = new Town(
     [CanalaveCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Canalave City'])],
     {
         requirements: [new RouteKillRequirement(10, GameConstants.Region.sinnoh, 218)],
-        npcs: [CanalaveRiley, CanalaveYoungBoy],
+        npcs: [CanalaveRiley, CanalaveYoungBoy, CanalaveSinnohMyth],
     }
 );
 TownList['Snowpoint City'] = new Town(
@@ -2698,7 +2698,7 @@ TownList['Fight Area'] = new Town(
     [FightAreaShop],
     {
         requirements: [new GymBadgeRequirement(BadgeEnums.Elite_SinnohChampion)],
-        npcs: [FightAreaAceTrainer, FightAreaZero],
+        npcs: [FightAreaAceTrainer, FightAreaZero1, FightAreaZero2],
     }
 );
 TownList['Survival Area'] = new Town(
