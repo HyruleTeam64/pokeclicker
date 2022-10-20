@@ -435,7 +435,7 @@ TemporaryBattleList['Giratina'] = new TemporaryBattle(
     [new GymPokemon('Giratina (Altered)', 12510000, 47)],
     undefined,
     [new QuestLineCompletedRequirement('A New World')],
-    [new TemporaryBattleRequirement('Giratina'), new ObtainedPokemonRequirement(pokemonMap.Giratina (Altered))],
+    [new TemporaryBattleRequirement('Giratina'), new ObtainedPokemonRequirement(pokemonMap['Giratina (Altered)'])],
     {
         displayName: 'Giratina',
         returnTown: 'Mt. Coronet',
