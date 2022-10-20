@@ -1219,7 +1219,8 @@ class Update implements Saveable {
         '0.9.19': ({ playerData, saveData }) => {
             // Add Kimono Girls Temporary Battles
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 25);
-
+            // Add Giratina Altered Temporary Battle
+            saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 29);
             // Create new Pokemon Gender Statistics if they don't exist
             // Male
             if (!saveData.statistics.malePokemonCaptured) {
