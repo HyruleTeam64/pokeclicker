@@ -791,6 +791,7 @@ export enum BulletinBoards {
     Kanto,
     Johto,
     Hoenn,
+    Sinnoh,
     Sevii4567,
     Kalos,
     Alola,
