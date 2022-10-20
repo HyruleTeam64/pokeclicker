@@ -2471,6 +2471,20 @@ const CanalaveYoungBoy = new NPC('Young Boy', [
     'Maybe if you can prove yourself by conquering that island, you could find Cresselia roaming around the region...',
 ]);
 
+const CanaliveSinnohMyth = new NPC('Sinnoh\'s Myth', [
+    '<i>Three Pokémon there were.</i>',
+    '<i>Into the lakes they dove.</i>',
+    '<i>Deep, deep, drawing no breath.</i>',
+    '<i>Deeper, deeper they dove.</i>',
+    '<i>Into suffocating depths they dove.</i>',
+    '<i>Deeper, then deepest they alight.</i>',
+    '<i>From the lake floor they rise.</i>',
+    '<i>Bearing with them the power to make vast lands, they rise again.</i>',
+],{
+    image: 'assets/images/npcs/Professor Oak.png',
+    requirement: new MultiRequirement([new QuestLineStartedRequirement('Zero\'s Ambition'), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 1, GameConstants.AchievementOption.less)]),
+});
+
 const SnowpointYoungGirl = new NPC('Young Girl', [
     'Someone told me that training an Eevee in Lake Acuity will make it evolve.',
     'They must be lying, how can that be true?!',
@@ -2486,16 +2500,25 @@ const SunyshoreRibbonerJulia = new NPC('Ribboner Julia', [
 const FightAreaAceTrainer = new NPC('Ace Trainer Quinn', [
     'Something amazing happened on top of Mt. Coronet. We could see it all the way from here. I\'m sure everyone in the entire region saw it.',
     'What? You were there? What happened? What was that purple thing?',
-    'The Distortion World? Hold on, I think I\'ve read about that in an old book in the Canalave City library. But according to that book the only entrance to the Distortion World is hidden deep within Sendoff Spring. This is quite the discovery my friend.',
+    'The Distortion World? Hold on, I\'ve heard that name before, there was a guy around here named Zero looking for a way to enter that place',
 ], {image: 'assets/images/trainers/Ace Trainer (male).png'});
 
-const FightAreaZero = new NPC('Zero', [
+const FightAreaZero1 = new NPC('Zero', [
     'You\'re the Champion, right? I need your help on a small errand.',
     'My old friend Newton used to study the Distortion World, he was working on opening a gate to it. I\'ve heard that you were able to enter the Distortion World from a portal at the top of Mt. Coronet, so I was wondering if you could help me open a new portal to fufill my friend\'s wish.',
     'An old book about Sinnoh\'s history was recently discovered at the Canalave City Library, it may have usefull information.',
 ], {
     image: 'assets/images/npcs/Professor Oak.png',
-    requirement: new MultiRequirement([new QuestLineStartedRequirement('Zero\'s Ambition'), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 1, GameConstants.AchievementOption.less)]),
+    requirement: new MultiRequirement([new QuestLineStartedRequirement('Zero\'s Ambition'), new QuestLineStepCompletedRequirement('Zero\'s Ambition'), 1, GameConstants.AchievementOption.less)]),
+});
+
+const FightAreaZero2 = new NPC('Zero', [
+    '',
+    'My old friend Newton used to study the Distortion World, he was working on opening a gate to it. I\'ve heard that you were able to enter the Distortion World from a portal at the top of Mt. Coronet, so I was wondering if you could help me open a new portal to fufill my friend\'s wish.',
+    'An old book about Sinnoh\'s history was recently discovered at the Canalave City Library, it may have usefull information.',
+], {
+    image: 'assets/images/npcs/Professor Oak.png',
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 1), new QuestLineStepCompletedRequirement('Zero\'s Ambition'), 2, GameConstants.AchievementOption.less)]),
 });
 
 const SurvivalAreaSinnohRoamerNPC = new RoamerNPC('Hiker Kevin', [
