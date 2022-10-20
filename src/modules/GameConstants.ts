@@ -1314,6 +1314,7 @@ export const TemporaryBattles = [
     'Spiky-eared Pichu',
     'Rocket Boss Giovanni',
     'Galactic Boss Cyrus',
+    'Giratina',
     'Team Plasma Grunt 1',
     'Team Plasma Grunt 2',
     'Team Plasma Grunt 3',
