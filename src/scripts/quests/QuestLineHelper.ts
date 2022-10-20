@@ -768,10 +768,16 @@ class QuestLineHelper {
     
     //Giratina Origin quest
     public static createGiratinaOriginQuestLine() {
-        const giratinaOriginQuestLine = new QuestLine('Zero\'s Ambition', 'Help Zero find an entrance to the Distortion World', new MultiRequirement([new ObtainedPokemonRequirement(pokemonMap['Giratina (Altered)']), new GymBadgeRequirement(BadgeEnums.Elite_SinnohChampion)]) , GameConstants.BulletinBoards.Sinnoh);
+        const giratinaOriginQuestLine = new QuestLine('Zero\'s Ambition', 'Help Zero find an entrance to the Distortion World.', new MultiRequirement([new ObtainedPokemonRequirement(pokemonMap['Giratina (Altered)']), new GymBadgeRequirement(BadgeEnums.Elite_SinnohChampion)]) , GameConstants.BulletinBoards.Sinnoh);
 
-        const talktoZero1 = new TalkToNPCQuest(FightAreaZero, 'Talk to Zero in the Fight Area.');
+        const talktoZero1 = new TalkToNPCQuest(FightAreaZero1, 'Talk to Zero in the Fight Area.');
         giratinaOriginQuestLine.addQuest(talktoZero1);
+        
+        const readSinnohMyth = new TalkToNPCQuest(CanaliveSinnohMyth, 'Read the recently discovered book in Canalive City.');
+        giratinaOriginQuestLine.addQuest(readSinnohMyth);
+        
+        const talktoZero2 = new TalkToNPCQuest(FightAreaZero2, 'Report to Zero what was in the book.');
+        giratinaOriginQuestLine.addQuest(talktoZero2);
         
         App.game.quests.questLines().push(giratinaOriginQuestLine);
     }
