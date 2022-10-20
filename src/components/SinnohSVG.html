@@ -947,6 +947,16 @@
          , image: "assets/images/map/blimp_pikachu.png"
          })
      %>
+         
+     <%- include('templates/mapOverlay',
+         { name: "Giratina"
+         , x: 40, y: 18
+         , width: 4, height: 4
+         , databind: "click: () => TemporaryBattleList['Giratina'].protectedOnclick(), attr: { class: TemporaryBattleList['Giratina'].isUnlocked() ? '' : 'locked' }"
+         , visible:  "TemporaryBattleList['Giratina'] && TemporaryBattleList['Giratina'].isVisible()"
+         , image: "assets/images/map/giratina.png"
+         })
+     %>
 
      <%- include('templates/mapOverlay',
          { name: "Ash Ketchum"
