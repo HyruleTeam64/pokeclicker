@@ -2481,7 +2481,6 @@ const CanalaveSinnohMyth = new NPC('Sinnoh\'s Myth', [
     '<i>From the lake floor they rise.</i>',
     '<i>Bearing with them the power to make vast lands, they rise again.</i>',
 ],{
-    image: 'assets/images/npcs/Professor Oak.png',
     requirement: new MultiRequirement([new QuestLineStartedRequirement('Zero\'s Ambition'), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 1, GameConstants.AchievementOption.less)]),
 });
 
@@ -2513,9 +2512,9 @@ const FightAreaZero1 = new NPC('Zero', [
 });
 
 const FightAreaZero2 = new NPC('Zero', [
-    '',
-    'My old friend Newton used to study the Distortion World, he was working on opening a gate to it. I\'ve heard that you were able to enter the Distortion World from a portal at the top of Mt. Coronet, so I was wondering if you could help me open a new portal to fufill my friend\'s wish.',
-    'An old book about Sinnoh\'s history was recently discovered at the Canalave City Library, it may have usefull information.',
+    'What was in that book? Did you find any information on the Distortion World?',
+    'It didn\' mention it once? That\'s a shame.',
+    'Wait, you said the book mentioned the Lake Trio, right? Legends say the have existed since the creation of the world, they may know how to enter the Distortion World',
 ], {
     image: 'assets/images/npcs/Professor Oak.png',
     requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 1), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 2, GameConstants.AchievementOption.less)]),
