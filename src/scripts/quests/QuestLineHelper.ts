@@ -773,7 +773,7 @@ class QuestLineHelper {
         const talktoZero1 = new TalkToNPCQuest(FightAreaZero1, 'Talk to Zero in the Fight Area.');
         giratinaOriginQuestLine.addQuest(talktoZero1);
         
-        const readSinnohMyth = new TalkToNPCQuest(CanaliveSinnohMyth, 'Read the recently discovered book in Canalive City.');
+        const readSinnohMyth = new TalkToNPCQuest(CanalaveSinnohMyth, 'Read the recently discovered book in Canalive City.');
         giratinaOriginQuestLine.addQuest(readSinnohMyth);
         
         const talktoZero2 = new TalkToNPCQuest(FightAreaZero2, 'Report to Zero what was in the book.');
