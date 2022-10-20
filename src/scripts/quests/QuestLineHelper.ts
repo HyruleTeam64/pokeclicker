@@ -765,7 +765,16 @@ class QuestLineHelper {
 
         App.game.quests.questLines().push(galacticSinnohQuestLine);
     }
+    
+    //Giratina Origin quest
+    public static createGiratinaOriginQuestLine() {
+        const giratinaOriginQuestLine = new QuestLine('A New World', 'Help Zero find an entrance to the Distorsion World', new MultiRequirement([new ObtainedPokemonRequirement(pokemonMap['Giratina (Altered)']), new GymBadgeRequirement(BadgeEnums.Elite_SinnohChampion)]) , GameConstants.BulletinBoards.Sinnoh);
 
+        const talktoZero1 = new TalkToNPCQuest(FightAreaZero, 'Talk to Zero in the Fight Area.');
+        giratinaOriginQuestLine.addQuest(talktoZero1);
+        
+        App.game.quests.questLines().push(giratinaOriginQuestLine);
+    }
     // Unova QuestLines
     // Started upon defeating Virbank City's gym.
     public static createPlasmaUnovaQuestLine() {
@@ -1991,6 +2000,7 @@ class QuestLineHelper {
         this.createPinkanThemeparkQuestLine();
         this.createRegiTrioQuestLine();
         this.createGalacticSinnohQuestLine();
+        this.createGiratinaOriginQuestLine();
         this.createPlasmaUnovaQuestLine();
         this.createDetectivePikachuQuestLine();
         this.createVivillonQuestLine();
