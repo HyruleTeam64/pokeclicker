@@ -2489,6 +2489,15 @@ const FightAreaAceTrainer = new NPC('Ace Trainer Quinn', [
     'The Distortion World? Hold on, I think I\'ve read about that in an old book in the Canalave City library. But according to that book the only entrance to the Distortion World is hidden deep within Sendoff Spring. This is quite the discovery my friend.',
 ], {image: 'assets/images/trainers/Ace Trainer (male).png'});
 
+const FightAreaZero = new NPC('Zero', [
+    'You\'re the Champion, right? I need your help on a small errand.',
+    'My old friend Newton used to study the Distortion World, he was working on opening a gate to it. I\'ve heard that you were able to enter the Distortion World from a portal at the top of Mt. Coronet, so I was wondering if you could help me open a new portal to fufill my friend\'s wish.',
+    'An old book about Sinnoh\'s history was recently discovered at the Canalave City Library, it may have usefull information.',
+], {
+    image: 'assets/images/npcs/Professor Oak.png',
+    requirement: new MultiRequirement([new QuestLineStartedRequirement('Zero\'s Ambition'), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 1, GameConstants.AchievementOption.less)]),
+});
+
 const SurvivalAreaSinnohRoamerNPC = new RoamerNPC('Hiker Kevin', [
     'I spotted a bunch of roaming Pokémon on {ROUTE_NAME}!',
 ], GameConstants.Region.sinnoh, RoamingPokemonList.findGroup(GameConstants.Region.sinnoh, GameConstants.SinnohSubRegions.Sinnoh), 'assets/images/trainers/Hiker.png');
@@ -2512,7 +2521,7 @@ const LucyStevens1 = new NPC('Lucy Stevens', [
 TownList['Twinleaf Town'] = new Town(
     'Twinleaf Town',
     GameConstants.Region.sinnoh,
-    [],
+    [new BulletinBoard(GameConstants.BulletinBoards.Sinnoh)],
     {
         requirements: [new GymBadgeRequirement(BadgeEnums.Elite_HoennChampion)],
         npcs: [TwinleafContestChampion],
@@ -2666,7 +2675,7 @@ TownList['Fight Area'] = new Town(
     [FightAreaShop],
     {
         requirements: [new GymBadgeRequirement(BadgeEnums.Elite_SinnohChampion)],
-        npcs: [FightAreaAceTrainer],
+        npcs: [FightAreaAceTrainer, FightAreaZero],
     }
 );
 TownList['Survival Area'] = new Town(
