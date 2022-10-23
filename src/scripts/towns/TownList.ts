@@ -2489,7 +2489,23 @@ const VerityMesprit = new NPC('Mesprit', [
     '<i>Collect 10 Purple Shards and then visit my two siblings. They will also help you in your quest.</i>',
 ],{
     image: 'assets/images/pokemon/481.png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 2), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 3, GameConstants.AchievementOption.less)]),});
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 2), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 4, GameConstants.AchievementOption.less)]),});
+
+const ValorAzelf = new NPC('Azelf', [
+    '<i>Mesprit told me you would come.</i>',
+    '<i>In order to enter the Distortion World, we need to open a gate to it. The materials you gathered for Mesprit are only a third of the ones needed to open such gate.</i>',
+    '<i>Obtain 10 Ochre Shards and then visit Uxie at Lake Acuity.</i>',
+],{
+    image: 'assets/images/pokemon/482.png',
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 4), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 6, GameConstants.AchievementOption.less)]),});
+
+const AcuityUxie = new NPC('Uxie', [
+    '<i>My siblings had informed me of your arrival.</i>',
+    '<i>Looks like you have already gathered more than half of the necessary materials. The only materials left to make the key are 10 Crimson Shards.</i>',
+    '<i>We will be waiting at Sendoff Spring, meet us there after you have collected the shards.</i>',
+],{
+    image: 'assets/images/pokemon/480.png',
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 6), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 8, GameConstants.AchievementOption.less)]),});
 
 const SnowpointYoungGirl = new NPC('Young Girl', [
     'Someone told me that training an Eevee in Lake Acuity will make it evolve.',
@@ -2521,7 +2537,7 @@ const FightAreaZero1 = new NPC('Zero', [
 const FightAreaZero2 = new NPC('Zero', [
     'What was in that book? Did you find any information on the Distortion World?',
     'It didn\' mention it once? That\'s a shame.',
-    'Wait, you said the book mentioned the Lake Trio, right? Legends say the have existed since the creation of the world, they may know how to enter the Distortion World',
+    'Wait, you said the book mentioned the Lake Trio, right? Legends say they have existed since the creation of the world, they may know how to enter the Distortion World',
 ], {
     image: 'assets/images/npcs/Professor Oak.png',
     requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 1), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 2, GameConstants.AchievementOption.less)]),
@@ -2530,6 +2546,23 @@ const FightAreaZero2 = new NPC('Zero', [
 const SurvivalAreaSinnohRoamerNPC = new RoamerNPC('Hiker Kevin', [
     'I spotted a bunch of roaming Pokémon on {ROUTE_NAME}!',
 ], GameConstants.Region.sinnoh, RoamingPokemonList.findGroup(GameConstants.Region.sinnoh, GameConstants.SinnohSubRegions.Sinnoh), 'assets/images/trainers/Hiker.png');
+
+const SendoffSpringLakeTrio = new NPC('Lake Trio', [
+    '<i>You are finally here.</i>',
+    '<i>We have been able to create a key to the Distortion World using the materials you collected, but it is unable to work in it\'s current state.</i>',
+    '<i>We bestow it upon you, charge it with the ghostly energy of the Distortion World.</i>',
+],{
+    image: 'assets/images/pokemon/480.png',
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 9), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 11, GameConstants.AchievementOption.less)]),});
+
+const SendoffSpringZero = new NPC('Zero', [
+    'I couldn\'t wait anymore for you to report about your progress, so I asked around and discovered you were coming here.',
+    'Wait, is that the key to the Distortion World? With that, I could open the gate myself.',
+    'You know what? You are fired, I no longer need you. Now, give me the key to the Distortion World or I will take it by force!',
+], {
+    image: 'assets/images/npcs/Professor Oak.png',
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 11), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 12, GameConstants.AchievementOption.less)]),
+});
 
 const ProfRowan = new ProfNPC('Prof. Rowan',
     GameConstants.Region.sinnoh,
