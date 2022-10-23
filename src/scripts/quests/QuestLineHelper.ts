@@ -782,7 +782,7 @@ class QuestLineHelper {
         const talktoMesprit = new TalkToNPCQuest(VerityMesprit, 'Ask Mesprit about the Distorsion World in Lake Verity.');
         giratinaOriginQuestLine.addQuest(talktoMesprit);
         
-        const obtain10PurpleShards = new CustomQuest(10, undefined, 'Obtain 10 Purple Shards', () => player.mineInventory().find(item => item.name == 'Purple Shard').amount()),
+        const obtain10PurpleShards = new CustomQuest(10, undefined, 'Obtain 10 Purple Shards', () => player.mineInventory().find(item => item.name == 'Purple Shard').amount());
         giratinaOriginQuestLine.addQuest(obtain10PurpleShards);
         
         App.game.quests.questLines().push(giratinaOriginQuestLine);
