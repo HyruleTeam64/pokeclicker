@@ -768,7 +768,7 @@ class QuestLineHelper {
     
     //Giratina Origin quest
     public static createGiratinaOriginQuestLine() {
-        const giratinaOriginQuestLine = new QuestLine('Zero\'s Ambition', 'Help Zero find an entrance to the Distortion World.', new MultiRequirement([new TemporaryBattleRequirement('Giratina')), new GymBadgeRequirement(BadgeEnums.Elite_SinnohChampion)]) , GameConstants.BulletinBoards.Sinnoh);
+        const giratinaOriginQuestLine = new QuestLine('Zero\'s Ambition', 'Help Zero find an entrance to the Distortion World.', new MultiRequirement([new TemporaryBattleRequirement('Giratina')), new GymBadgeRequirement(BadgeEnums.Elite_SinnohChampion)]), GameConstants.BulletinBoards.Sinnoh);
 
         const talktoZero1 = new TalkToNPCQuest(FightAreaZero1, 'Talk to Zero in the Fight Area.');
         giratinaOriginQuestLine.addQuest(talktoZero1);
