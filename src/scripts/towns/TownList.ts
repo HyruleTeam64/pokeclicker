@@ -2481,8 +2481,15 @@ const CanalaveSinnohMyth = new NPC('Sinnoh\'s Myth', [
     '<i>From the lake floor they rise.</i>',
     '<i>Bearing with them the power to make vast lands, they rise again.</i>',
 ],{
-    requirement: new MultiRequirement([new QuestLineStartedRequirement('Zero\'s Ambition'), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 1, GameConstants.AchievementOption.less)]),
-});
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 0), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 2, GameConstants.AchievementOption.less)]),});
+
+const VerityMesprit = new NPC('Mesprit', [
+    '<i>You are the trainer looking for the Distortion World, right?</i>',
+    '<i>We can help you in your mission, but we will need a few materials.</i>',
+    '<i>Collect 10 Purple Shards and then visit my two siblings. They will also help you in your quest.</i>',
+],{
+    image: 'assets/images/pokemon/481.png',
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 2), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 3, GameConstants.AchievementOption.less)]),});
 
 const SnowpointYoungGirl = new NPC('Young Girl', [
     'Someone told me that training an Eevee in Lake Acuity will make it evolve.',
@@ -2792,7 +2799,11 @@ TownList['Lake Valor'] = new DungeonTown(
 TownList['Lake Verity'] = new DungeonTown(
     'Lake Verity',
     GameConstants.Region.sinnoh,
-    [new ClearDungeonRequirement(1, GameConstants.getDungeonIndex('Lake Valor'))]
+    [new ClearDungeonRequirement(1, GameConstants.getDungeonIndex('Lake Valor'))],
+    [],
+    {
+        npcs: [VerityMesprit],
+    }
 );
 TownList['Mt. Coronet North'] = new DungeonTown(
     'Mt. Coronet North',
