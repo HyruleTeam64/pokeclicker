@@ -2552,7 +2552,7 @@ const SendoffSpringLakeTrio = new NPC('Lake Trio', [
     '<i>We have been able to create a key to the Distortion World using the materials you collected, but it is unable to work in it\'s current state.</i>',
     '<i>We bestow it upon you, charge it with the ghostly energy of the Distortion World.</i>',
 ],{
-    image: 'assets/images/pokemon/480.png',
+    image: 'assets/images/npcs/Lake Trio.png',
     requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 9), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 11, GameConstants.AchievementOption.less)]),});
 
 const SendoffSpringZero = new NPC('Zero', [
