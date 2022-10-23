@@ -1381,6 +1381,13 @@ class Update implements Saveable {
                 settingsData.breedingRegionFilter = 2 ** settingsData.breedingRegionFilter;
             }
         },
+
+        '0.10.1': ({ playerData, saveData }) => {
+            // Brawlers Cave renamed
+            if (playerData._townName == 'Brawlers Cave') {
+                playerData._townName = 'Brawlers\' Cave';
+            }
+        },
     };
 
     constructor() {

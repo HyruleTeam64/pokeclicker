@@ -2113,6 +2113,7 @@ TemporaryBattleList.Regigigas = new TemporaryBattle(
     {
         hideTrainer: true,
         isTrainerBattle: false,
+        returnTown: 'Freezington',
         imageName: '../pokemon/486',
     }
 );
