@@ -446,6 +446,18 @@ TemporaryBattleList['Giratina'] = new TemporaryBattle(
             },
     }
 );
+TemporaryBattleList['Zero'] = new TemporaryBattle(
+    'Zero',
+    [
+        new GymPokemon('Magnemite', 13120000, 70),
+        new GymPokemon('Magneton', 13870000, 72),
+        new GymPokemon('Magnezone', 14130000, 75),
+    ],
+    'Impressive. Your prowess is notable.',
+    [new QuestLineStepCompletedRequirement('Zero\'s Ambition', 12)],
+    undefined,
+    {imageName: 'Bede'}
+);
 
 // Unova Temporary Battles
 TemporaryBattleList['Team Plasma Grunt 1'] = new TemporaryBattle(
