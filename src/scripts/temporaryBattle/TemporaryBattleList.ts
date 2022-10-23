@@ -443,6 +443,7 @@ TemporaryBattleList['Giratina'] = new TemporaryBattle(
         imageName: '../pokemon/487',
         firstTimeRewardFunction: () => {
             App.game.party.gainPokemonById(487);
+            },
     }
 );
 
