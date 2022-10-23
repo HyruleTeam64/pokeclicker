@@ -432,16 +432,17 @@ TemporaryBattleList['Galactic Boss Cyrus'] = new TemporaryBattle(
 );
 TemporaryBattleList['Giratina'] = new TemporaryBattle(
     'Giratina',
-    [new GymPokemon('Giratina (Altered)', 12510000, 47)],
-    undefined,
+    [new GymPokemon('Giratina (Origin)', 12510000, 47)],
+    '<i>You managed to calm Giratina.</i>',
     [new QuestLineCompletedRequirement('A New World')],
-    [new TemporaryBattleRequirement('Giratina'), new ObtainedPokemonRequirement(pokemonMap['Giratina (Altered)'])],
+    undefined,
     {
         displayName: 'Giratina',
         returnTown: 'Mt. Coronet',
-        isTrainerBattle: false,
         hideTrainer: true,
-        visibleRequirement: new QuestLineCompletedRequirement('A New World'),
+        imageName: '../pokemon/487',
+        firstTimeRewardFunction: () => {
+            App.game.party.gainPokemonById(487);
     }
 );
 
