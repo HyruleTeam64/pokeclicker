@@ -776,13 +776,14 @@ class QuestLineHelper {
         const readSinnohMyth = new TalkToNPCQuest(CanalaveSinnohMyth, 'Read the recently discovered book in Canalave City.');
         giratinaOriginQuestLine.addQuest(readSinnohMyth);
         
-        const talktoMesprit = new TalkToNPCQuest(VerityMesprit, 'Report to Zero what was in the book.');
+        const talktoZero2 = new TalkToNPCQuest(VerityMesprit, 'Report to Zero what was in the book.');
         giratinaOriginQuestLine.addQuest(talktoZero2);
         
-        const talktoZero2 = new TalkToNPCQuest(FightAreaZero2, 'Ask Mesprit about the Distorsion World in Lake Verity.');
-        giratinaOriginQuestLine.addQuest(talktoZero2);
+        const talktoMesprit = new TalkToNPCQuest(FightAreaZero2, 'Ask Mesprit about the Distorsion World in Lake Verity.');
+        giratinaOriginQuestLine.addQuest(talktoMesprit);
         
-        const obtain10PurpleShards = new CustomQuest(10, undefined, 'Obtain 10 Purple Shards', () => player.mineInventory().find(item => item.name == 'Purple Shard').amount()
+        const obtain10PurpleShards = new CustomQuest(10, undefined, 'Obtain 10 Purple Shards', () => player.mineInventory().find(item => item.name == 'Purple Shard').amount()),
+        giratinaOriginQuestLine.addQuest(obtain10PurpleShards);
         
         App.game.quests.questLines().push(giratinaOriginQuestLine);
     }
