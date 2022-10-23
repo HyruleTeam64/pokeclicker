@@ -911,7 +911,7 @@
          , x: 39, y: 26
          , width: 5, height: 5
          , databind: "click:function(){MapHelper.moveToTown('Distortion World')}, attr:{ class: MapHelper.calculateTownCssClass('Distortion World') }"
-         , visible:  "App.game.statistics.dungeonsCleared[GameConstants.getDungeonIndex('Spear Pillar')]() >= 1 && App.game.statistics.dungeonsCleared[GameConstants.getDungeonIndex('Distortion World')]() == 0"
+         , visible:  "App.game.statistics.dungeonsCleared[GameConstants.getDungeonIndex('Spear Pillar')]() >= 1 && App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Giratina')]() == 0"
          , image: "assets/images/map/distortion_world.png"
          , connectedToTown: "Distortion World"
          })
@@ -945,16 +945,6 @@
          , databind: "click:function(){MapHelper.moveToTown('Twinleaf Town')}, attr:{ class: MapHelper.calculateTownCssClass('Twinleaf Town') }"
          , visible:  "MapHelper.ableToTravel() && player.starter() == GameConstants.Starter.Pikachu"
          , image: "assets/images/map/blimp_pikachu.png"
-         })
-     %>
-         
-     <%- include('templates/mapOverlay',
-         { name: "Giratina"
-         , x: 40, y: 18
-         , width: 6, height: 6
-         , databind: "click: () => TemporaryBattleList['Giratina'].protectedOnclick(), attr: { class: TemporaryBattleList['Giratina'].isUnlocked() ? '' : 'locked' }"
-         , visible:  "TemporaryBattleList['Giratina'] && TemporaryBattleList['Giratina'].isVisible()"
-         , image: "assets/images/map/giratina.png"
          })
      %>
 
