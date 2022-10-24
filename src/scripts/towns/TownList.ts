@@ -2537,7 +2537,7 @@ const FightAreaZero1 = new NPC('Zero', [
 const FightAreaZero2 = new NPC('Zero', [
     'What was in that book? Did you find any information on the Distortion World?',
     'It didn\' mention it once? That\'s a shame.',
-    'Wait, you said the book mentioned the Lake Trio, right? Legends say they have existed since the creation of the world, they may know how to enter the Distortion World',
+    'Wait, you said the book mentioned the Lake Trio, right? Legends say they have existed since the creation of the world, they may know how to enter the Distortion World.',
 ], {
     image: 'assets/images/npcs/Professor Oak.png',
     requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Zero\'s Ambition', 1), new QuestLineStepCompletedRequirement('Zero\'s Ambition', 2, GameConstants.AchievementOption.less)]),
