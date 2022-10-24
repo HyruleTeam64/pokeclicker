@@ -453,7 +453,7 @@ TemporaryBattleList['Zero'] = new TemporaryBattle(
         new GymPokemon('Magneton', 13870000, 72),
         new GymPokemon('Magnezone', 14130000, 75),
     ],
-    'Impressive. Your prowess is notable.',
+    'Argh! I can\'t believe I lost to someone like you! You can keep the key for now, but I\'ll get my revenge one day.',
     [new QuestLineStepCompletedRequirement('Zero\'s Ambition', 12)],
     undefined,
     {imageName: 'Bede'}
