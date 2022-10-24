@@ -768,7 +768,7 @@ class QuestLineHelper {
     
     //Giratina Origin quest
     public static createGiratinaOriginQuestLine() {
-        const giratinaOriginQuestLine = new QuestLine('Zero\'s Ambition', 'Help Zero find an entrance to the Distortion World.', new MultiRequirement([new TemporaryBattleRequirement('Giratina'), new GymBadgeRequirement(BadgeEnums.Elite_SinnohChampion)]), GameConstants.BulletinBoards.Sinnoh);
+        const giratinaOriginQuestLine = new QuestLine('Zero\'s Ambition', 'Help Zero find an entrance to the Distortion World.', new MultiRequirement([new TemporaryBattleRequirement('Giratina'), new ObtainedPokemonRequirement(pokemonMap.Uxie), new ObtainedPokemonRequirement(pokemonMap.Mesprit), new ObtainedPokemonRequirement(pokemonMap.Azelf), new GymBadgeRequirement(BadgeEnums.Elite_SinnohChampion)]), GameConstants.BulletinBoards.Sinnoh);
 
         const talktoZero1 = new TalkToNPCQuest(FightAreaZero1, 'Talk to Zero in the Fight Area.');
         giratinaOriginQuestLine.addQuest(talktoZero1);
@@ -800,19 +800,25 @@ class QuestLineHelper {
         const clearSendoffSpring = new CustomQuest(1, 0, 'Clear Sendoff Spring to meet the Lake Trio.', () => App.game.statistics.dungeonsCleared[GameConstants.getDungeonIndex('Sendoff Spring')]());
         giratinaOriginQuestLine.addQuest(clearSendoffSpring);
         
-        const talktoLakeTrio = new TalkToNPCQuest(SendoffSpringLakeTrio, 'Talk to the Lake Trio in Sendoff Spring');
+        const talktoLakeTrio = new TalkToNPCQuest(SendoffSpringLakeTrio, 'Talk to the Lake Trio in Sendoff Spring.');
         giratinaOriginQuestLine.addQuest(talktoLakeTrio);
         
         const chargeDistortionKey = new MultipleQuestsQuest(
             [
                 new GainGemsQuest(500, 0, PokemonType.Ghost),
                 new CustomQuest(1, undefined, 'Gain 1 Spooky Plate', () => player.mineInventory().find(item => item.name == 'Spooky Plate').amount()),
-            ], 'Charge the key to the Distortion World');
+            ], 'Charge the key to the Distortion World.');
         giratinaOriginQuestLine.addQuest(chargeDistortionKey);
         
-        const talktoZero3 = new TalkToNPCQuest(SendoffSpringZero, 'Talk to Zero in Sendoff Spring');
+        const talktoZero3 = new TalkToNPCQuest(SendoffSpringZero, 'Talk to Zero in Sendoff Spring.');
         giratinaOriginQuestLine.addQuest(talktoZero3);
         
+        const clearZero = new CustomQuest (1, 0, 'Defeat Zero to protect the key.', () => App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Zero')]());
+        giratinaOriginQuestLine.addQuest(clearZero);
+        
+        const catchGiratina = new CaptureSpecificPokemonQuest('Giratina (Origin)', 'You managed to enter the Distortion World, catch it\'s ruler.', 1, false, 0, undefined);
+        giratinaOriginQuestLine.addQuest(catchGiratina);
+
         App.game.quests.questLines().push(giratinaOriginQuestLine);
     }
     
