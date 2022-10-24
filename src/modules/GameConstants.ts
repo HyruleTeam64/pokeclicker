@@ -1316,6 +1316,7 @@ export const TemporaryBattles = [
     'Rocket Boss Giovanni',
     'Galactic Boss Cyrus',
     'Giratina',
+    'Zero',
     'Team Plasma Grunt 1',
     'Team Plasma Grunt 2',
     'Team Plasma Grunt 3',
