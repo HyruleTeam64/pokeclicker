@@ -2827,7 +2827,11 @@ TownList['Iron Island'] = new DungeonTown(
 TownList['Lake Valor'] = new DungeonTown(
     'Lake Valor',
     GameConstants.Region.sinnoh,
-    [new GymBadgeRequirement(BadgeEnums.Mine)]
+    [new GymBadgeRequirement(BadgeEnums.Mine)],
+    [],
+    {
+        npcs: [ValorAzelf],
+    }
 );
 TownList['Lake Verity'] = new DungeonTown(
     'Lake Verity',
@@ -2849,7 +2853,11 @@ TownList['Mt. Coronet North'] = new DungeonTown(
 TownList['Lake Acuity'] = new DungeonTown(
     'Lake Acuity',
     GameConstants.Region.sinnoh,
-    [new GymBadgeRequirement(BadgeEnums.Icicle)]
+    [new GymBadgeRequirement(BadgeEnums.Icicle)],
+    [],
+    {
+        npcs: [AcuityUxie],
+    }
 );
 TownList['Team Galactic HQ'] = new DungeonTown(
     'Team Galactic HQ',
@@ -2875,7 +2883,11 @@ TownList['Victory Road Sinnoh'] = new DungeonTown(
 TownList['Sendoff Spring'] = new DungeonTown(
     'Sendoff Spring',
     GameConstants.Region.sinnoh,
-    [new QuestLineStepCompletedRequirement('Zero\'s Ambition', 8)]
+    [new QuestLineStepCompletedRequirement('Zero\'s Ambition', 8)],
+    [TemporaryBattleList['Zero']],
+    {
+        npcs: [SendoffSpringLakeTrio, SendoffSpringZero],
+    }
 );
 TownList['Hall of Origin'] = new DungeonTown(
     'Hall of Origin',
