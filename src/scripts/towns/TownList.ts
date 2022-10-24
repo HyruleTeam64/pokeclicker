@@ -2875,7 +2875,7 @@ TownList['Victory Road Sinnoh'] = new DungeonTown(
 TownList['Sendoff Spring'] = new DungeonTown(
     'Sendoff Spring',
     GameConstants.Region.sinnoh,
-    [new GymBadgeRequirement(BadgeEnums.Elite_SinnohChampion)]
+    [new QuestLineStepCompletedRequirement('Zero\'s Ambition', 8)]
 );
 TownList['Hall of Origin'] = new DungeonTown(
     'Hall of Origin',
