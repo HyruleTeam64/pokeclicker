@@ -806,7 +806,7 @@ class QuestLineHelper {
         const chargeDistortionKey = new MultipleQuestsQuest(
             [
                 new GainGemsQuest(500, 0, PokemonType.Ghost),
-                new CustomQuest(1, undefined, 'Gain 1 Spooky Plate', () => player.mineInventory().find(item => item.name == 'Spooky Plate').amount()),
+                new CustomQuest(1, undefined, 'Gain 1 Spooky Plate.', () => player.mineInventory().find(item => item.name == 'Spooky Plate').amount()),
             ], 'Charge the key to the Distortion World.');
         giratinaOriginQuestLine.addQuest(chargeDistortionKey);
         
