@@ -1219,9 +1219,7 @@ class Update implements Saveable {
         '0.10.0': ({ playerData, saveData, settingsData }) => {
             // Add Kimono Girls Temporary Battles
             saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 25);
-            // Add Giratina Altered and Zero Temporary Battles
-            saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 29);
-            saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 30);
+
             // Create new Pokemon Gender Statistics if they don't exist
             // Male
             if (!saveData.statistics.malePokemonCaptured) {
@@ -1388,6 +1386,10 @@ class Update implements Saveable {
             if (playerData._townName == 'Brawlers Cave') {
                 playerData._townName = 'Brawlers\' Cave';
             }
+            
+            // Add Giratina and Zero Temporary Battles
+            saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 29);
+            saveData.statistics.temporaryBattleDefeated = Update.moveIndex(saveData.statistics.temporaryBattleDefeated, 30);
         },
     };
 
