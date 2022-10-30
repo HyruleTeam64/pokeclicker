@@ -418,8 +418,8 @@ dungeonList['Viridian Forest'] = new Dungeon('Viridian Forest',
     ],
     {
         common: [
-            {loot: 'xAttack', weight: 2},
-            {loot: 'Pecha'},
+            {loot: 'Purple Shard', weight: 2},
+            {loot: 'Spooky Plate'},
         ],
         epic: [{loot: 'Pokeball'}],
         mythic: [{loot: 'SmallRestore'}],
@@ -499,8 +499,8 @@ dungeonList['Mt. Moon'] = new Dungeon('Mt. Moon',
     ],
     {
         common: [
-            {loot: 'xClick'},
-            {loot: 'Dowsing_machine'},
+            {loot: 'Ochre Shard'},
+            {loot: 'Crimson Shard'},
         ],
         mythic: [
             {loot: 'Greatball', weight: 2},
